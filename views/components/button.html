@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- <meta name="robots" content="noindex"> -->
+    <meta name="keyword" content="Lorem, ipsum." />
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ratione." />
+    <meta property="og:title" content="Lorem, ipsum." />
+    <meta property="og:description"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ratione." />
+    <meta property="og:image"
+        content="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/public/images/static/sample_og_image.jpeg" />
+    <title>Button - Components :: Lorem, ipsum.</title>
+    <!-- <link rel="preload" href="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/src/stylesheets/normalized.css" as="style"
+        onload="this.rel='stylesheet'" /> -->
+    <!-- <link rel="preload" href="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/src/stylesheets/common.css" as="style"
+            onload="this.rel='stylesheet'" /> -->
+    <link rel="stylesheet" href="/public/stylesheets/common.css" />
+    <!-- <link rel="stylesheet" href="/public/stylesheets/containers_set.css" /> -->
+    <link rel="stylesheet" href="/public/stylesheets/components_set.css" />
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            /* min-height: 50px; */
+            height: auto;
+            padding: 1rem 2rem;
+            margin-bottom: 1rem;
+            background-color: black;
+            z-index: 8;
+        }
+
+        header img {
+            width: auto;
+            height: 32px;
+        }
+
+        .gnb-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            column-gap: 1rem;
+            color: white;
+        }
+
+        aside {
+            position: fixed;
+            top: 0;
+            left: -200px;
+            display: block;
+            min-width: 200px;
+            height: 100%;
+            background-color: skyblue;
+            z-index: 9;
+            transition: all 0.5s ease-out;
+        }
+
+        aside.reverse {
+            left: unset;
+            right: -200px;
+            background-color: pink;
+        }
+
+        main {
+            z-index: 1;
+            margin-bottom: 11.5rem;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* min-height: 50px; */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: black;
+            z-index: 1;
+        }
+
+        footer p {
+            color: white;
+            font-size: var(--font-size__detail);
+            line-height: 1.5;
+        }
+
+        form>input {
+            border: 1px solid;
+        }
+
+        hr {
+            /* margin: 1rem; */
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body class="wrapper">
+    <header class="header-wrapper">
+        <a href="/">
+            <img src="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/public/images/logo/sample_logo.png"
+                class="header-logo" alt="" />
+        </a>
+        <section class="gnb-wrapper">
+            <a href="/components/button" class="">버튼</a>
+            <a href="/typography" class="">typography</a>
+            <a href="/containers" class="">컨테이너</a>
+        </section>
+    </header>
+    <main class="main-wrapper">
+        <h1>버튼 컨테이너</h1>
+        <section class="button-container light">
+            <button type="button" class="button__a">버튼</button>
+        </section>
+        <section class="button-container dark">
+            <button type="button" class="button__a">버튼</button>
+
+        </section>
+        <h1 class="section-title__main">버튼</h1>
+        <p>기본버튼은 상황이 뭐가 있을까.... 버튼의 종류가 기본이 되고,</p>
+        <ol>
+            <li>색깔</li>
+            <li>모양</li>
+            <li>크기</li>
+            <li></li>
+        </ol>
+        <h2 class="section-title__sub">기본 버튼</h2>
+        <section class="button-container">
+            <button type="button" class="button__a">default button(primary)</button>
+            <button type="button" class="button__a">default button(default)</button>
+            <button type="button" class="button__a">default button(pressed)</button>
+            <button type="button" class="button__a">default button(disabled)</button>
+        </section>
+        <h1 class="contents-title__1">flat button</h1>
+        <section class="button-container h-center v-center">
+            <button type="button" class="flat-button">flat button(primary)</button>
+            <button type="button" class="flat-button">flat button(default)</button>
+            <button type="button" class="flat-button">flat button(pressed)</button>
+            <button type="button" class="flat-button">flat button(disabled)</button>
+        </section>
+        <button type="button" class="button__c">bordered button</button>
+        <button type="button" class="button__d">
+            <span>spacing between</span>
+            <span class="accent">both ends button</span>
+        </button>
+        <button type="button" class="button__e">
+            아이콘
+        </button>
+        <button type="button" class="button__f">
+            light anchor(f)
+        </button>
+        <button type="button" class="button__g">small + anchor button</button>
+        <button type="button" class="button__h">custom chat button</button>
+        <button type="button" class="button__i">small light button</button>
+        <button type="button" class="button__j">fit button</button>
+
+        <a href="/" class="button__d">hyperlink button</a>
+        <a href="/" class="text-anchor">text anchor</a>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@1.0.0/src/javascripts/common.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@original/src/javascripts/foundation.js"></script> -->
+    <!-- <script
+        src="https://cdn.jsdelivr.net/gh/nufyn/haedo-modules@javascripts-바까바까/src/javascripts/layouts/foundation_a.js"></script> -->
+    <script></script>
+</body>
+
+</html>
+
+<!-- 
+    슬라이드 와 carousel의 차이
+    /*
+    A slider and carousel are NOT the same thing. A slider slides the images horizontally or vertically (usually
+    horizontally) usually with a momentum effect.
+    
+    A carousel rotates the images radially and in a 3D feel by using distance and depth of field. They rotate on an axis
+    where the image is always facing you.
+    */
+ -->

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- <meta name="robots" content="noindex"> -->
+    <meta name="keyword" content="Lorem, ipsum." />
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ratione." />
+    <meta property="og:title" content="Lorem, ipsum." />
+    <meta property="og:description"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ratione." />
+    <meta property="og:image"
+        content="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/public/images/static/sample_og_image.jpeg" />
+    <title>Typography :: Lorem, ipsum.</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/src/stylesheets/common.css" /> -->
+    <link rel="stylesheet" href="/public/stylesheets/common.css" />
+    <!-- <link rel="stylesheet" href="/public/stylesheets/components_set.css" /> -->
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            /* min-height: 50px; */
+            height: auto;
+            padding: 1rem 2rem;
+            margin-bottom: 1rem;
+            background-color: black;
+            z-index: 8;
+        }
+
+        header img {
+            width: 120px;
+            height: 32px;
+        }
+
+        aside {
+            position: fixed;
+            top: 0;
+            left: -200px;
+            display: block;
+            min-width: 200px;
+            height: 100%;
+            background-color: skyblue;
+            z-index: 9;
+            transition: all 0.5s ease-out;
+        }
+
+        aside.reverse {
+            left: unset;
+            right: -200px;
+            background-color: pink;
+        }
+
+        main {
+            z-index: 1;
+            margin-bottom: 11.5rem;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* min-height: 50px; */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: black;
+            z-index: 1;
+        }
+
+        footer p {
+            color: white;
+            font-size: var(--font-size__detail);
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body class="wrapper">
+    <main class="main-wrapper">
+        <section class="title-container vertical">
+            <h1 class="contents-title__1">Heading 1</h1>
+            <h2 class="contents-title__2">Heading 2</h2>
+            <h3 class="contents-title__3">Heading 3</h3>
+            <h4 class="contents-title__4">Heading 4</h4>
+            <h5 class="contents-title__5">Heading 5</h5>
+            <h6 class="contents-title__6">Heading 6</h6>
+        </section>
+        <section class="title-container vertical">
+            <h1 class="font-size__24 font-weight__bolder margin-bottom__1">Lorem ipsum dolor sit amet consectetur.</h1>
+            <h1 class="section-title__main margin-bottom__1">Lorem ipsum dolor sit amet consectetur.</h1>
+            <h1 class="contents-title__1 margin-bottom__1">Lorem ipsum dolor sit amet consectetur.</h1>
+        </section>
+        <section class="title-container vertical h-left">
+            <h1 class="section-title__main font-size__24">Main Title</h1>
+            <h2 class="section-title__sub font-weight__400">Sub Title</h2>
+        </section>
+        <section class="title-container vertical h-center">
+            <h1 class="section-title__main">Main Title</h1>
+            <h2 class="section-title__sub">Sub Title</h2>
+        </section>
+        <section class="title-container h-between">
+            <h1 class="section-title__main">Main Title</h1>
+            <h2 class="section-title__sub">Sub Title</h2>
+        </section>
+        <section class="title-container vertical">
+            <p class="section-title__sup">Super Title</p>
+            <h1 class="section-title__main">Main Title</h1>
+            <h2 class="section-title__sub">Sub Title</h2>
+        </section>
+        <hr class="separator" />
+        <section class="title-container vertical h-left v-top margin-bottom__1">
+            <p class="contents-title__sup font-size__16">Super Title</p>
+            <h1 class="contents-title__main font-size__30">Main Title</h1>
+        </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic, voluptate quas nulla molestiae a
+            obcaecati. Nemo alias laborum exercitationem!</p>
+        <hr class="separator" />
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@1.0.0/src/javascripts/common.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@1.0.0/src/javascripts/layouts.js"></script> -->
+    <script src="/public/javascripts/layouts.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@original/src/javascripts/foundation.js"></script> -->
+    <!-- <script
+        src="https://cdn.jsdelivr.net/gh/nufyn/haedo-modules@javascripts-바까바까/src/javascripts/layouts/foundation_a.js"></script> -->
+    <script></script>
+</body>
+
+</html>
+
+<!-- 
+    슬라이드 와 carousel의 차이
+    /*
+    A slider and carousel are NOT the same thing. A slider slides the images horizontally or vertically (usually
+    horizontally) usually with a momentum effect.
+    
+    A carousel rotates the images radially and in a 3D feel by using distance and depth of field. They rotate on an axis
+    where the image is always facing you.
+    */
+ -->

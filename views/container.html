@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- <meta name="robots" content="noindex"> -->
+    <meta name="keyword" content="Lorem, ipsum." />
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ratione." />
+    <meta property="og:title" content="Lorem, ipsum." />
+    <meta property="og:description"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ratione." />
+    <meta property="og:image"
+        content="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/public/images/static/sample_og_image.jpeg" />
+    <title>Lorem, ipsum.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/src/stylesheets/common.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@stylesheets-1.0.0/layouts/flex.css" /> -->
+    <!-- <link rel="stylesheet" href="/public/stylesheets/common.css" /> -->
+    <link rel="stylesheet" href="/public/stylesheets/container_set.css" />
+    <!-- <link rel="stylesheet" href="/public/stylesheets/components_set.css" /> -->
+    <style>
+        header {
+            display: block;
+            width: 100%;
+            height: 64px;
+            margin-bottom: 1rem;
+            background-color: black;
+            z-index: 8;
+        }
+
+        aside {
+            position: absolute;
+            top: 0;
+            left: -200px;
+            display: block;
+            min-width: 200px;
+            height: 100%;
+            background-color: skyblue;
+            z-index: 9;
+        }
+
+        aside.reverse {
+            left: unset;
+            right: -200px;
+            background-color: pink;
+        }
+
+        main {
+            z-index: 1;
+        }
+
+        footer {
+            display: block;
+            width: 100%;
+            height: 200px;
+            margin-top: 11.5rem;
+            background-color: black;
+            z-index: 1;
+        }
+
+        form>input {
+            border: 1px solid;
+        }
+
+        hr {
+            /* margin: 1rem; */
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body class="wrapper parallax">
+    <header class="header-wrapper"></header>
+    <aside class="aside-wrapper"></aside>
+    <aside class="aside-wrapper reverse"></aside>
+    <main class="main-wrapper">
+        <section class="flex-col__2">
+            <aside class="remote-controller-wrapper">
+                <ul class="remote-controller-list">
+                    <li class="remote-controller-item">
+                        <a href="#1">flex container</a>
+                    </li>
+                    <li class="remote-controller-item">
+                        <a href="#2"></a>
+                    </li>
+                    <li class="remote-controller-item">
+                        <a href="#3"></a>
+                    </li>
+                    <li class="remote-controller-item">
+                        <a href="#4"></a>
+                    </li>
+                    <li class="remote-controller-item">
+                        <a href="#5"></a>
+                    </li>
+                    <li class="remote-controller-item">
+                        <a href="#6"></a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="contents-wrapper">
+                <article id="1" class="">
+                    <h1>flex container</h1>
+                    <section class="flex-row">
+
+                    </section>
+                    <section class="flex-row">
+
+                    </section>
+                </article>
+                <article id="2" class="">
+                    <h1>grid container</h1>
+                    <section class="flex-row">
+
+                    </section>
+                    <section class="flex-row">
+
+                    </section>
+                </article>
+            </section>
+
+        </section>
+    </main>
+    <footer class="footer-wrapper"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@1.0.0/src/javascripts/common.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@original/src/javascripts/foundation.js"></script> -->
+    <!-- <script
+        src="https://cdn.jsdelivr.net/gh/nufyn/haedo-modules@javascripts-바까바까/src/javascripts/layouts/foundation_a.js"></script> -->
+    <script></script>
+</body>
+
+</html>
+
+<!-- 
+    슬라이드 와 carousel의 차이
+    /*
+    A slider and carousel are NOT the same thing. A slider slides the images horizontally or vertically (usually
+    horizontally) usually with a momentum effect.
+    
+    A carousel rotates the images radially and in a 3D feel by using distance and depth of field. They rotate on an axis
+    where the image is always facing you.
+    */
+ -->

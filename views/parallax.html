@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- <meta name="robots" content="noindex"> -->
+    <meta name="keyword" content="Lorem, ipsum." />
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ratione." />
+    <meta property="og:title" content="Lorem, ipsum." />
+    <meta property="og:description"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ratione." />
+    <meta property="og:image"
+        content="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/public/images/static/sample_og_image.jpeg" />
+    <title>Lorem, ipsum.</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/src/stylesheet/common.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@stylesheets-1.0.0/layouts/flex.css" /> -->
+    <link rel="stylesheet" href="/public/stylesheets/common.css" />
+    <link rel="stylesheet" href="/public/stylesheets/components_set.css" />
+    <style>
+        header {
+            display: block;
+            width: 100%;
+            height: 64px;
+            margin-bottom: 1rem;
+            background-color: black;
+            z-index: 8;
+        }
+
+        aside {
+            position: absolute;
+            top: 0;
+            left: -200px;
+            display: block;
+            min-width: 200px;
+            height: 100%;
+            background-color: skyblue;
+            z-index: 9;
+        }
+
+        aside.reverse {
+            left: unset;
+            right: -200px;
+            background-color: pink;
+        }
+
+        main {
+            z-index: 1;
+        }
+
+        footer {
+            display: block;
+            width: 100%;
+            height: 200px;
+            margin-top: 11.5rem;
+            background-color: black;
+            z-index: 1;
+        }
+
+        form>input {
+            border: 1px solid;
+        }
+
+        hr {
+            /* margin: 1rem; */
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body class="wrapper parallax">
+    <header class="header-wrapper"></header>
+    <aside class="aside-wrapper"></aside>
+    <aside class="aside-wrapper reverse"></aside>
+    <main class="main-wrapper">
+        <h1 class="contents-title__1">heading 1</h1>
+        <h2 class="contents-title__2">heading 2</h2>
+        <h3 class="contents-title__3">heading 3</h3>
+        <h4 class="contents-title__4">heading 4</h4>
+        <h5 class="contents-title__5">heading 5</h5>
+        <h6 class="contents-title__6">heading 6</h6>
+        <button type="button" class="button__a">default button</button>
+        <button type="button" class="button__b">light button</button>
+        <button type="button" class="button__c">bordered button</button>
+        <button type="button" class="button__d">
+            <span>spacing between</span>
+            <span class="accent">both ends button</span>
+        </button>
+        <button type="button" class="button__e">
+            아이콘
+        </button>
+        <button type="button" class="button__f">
+            light anchor(f)
+        </button>
+        <button type="button" class="button__g">small + anchor button</button>
+        <button type="button" class="button__h">custom chat button</button>
+        <button type="button" class="button__i">small light button</button>
+        <button type="button" class="button__j">fit button</button>
+
+        <a href="/" class="button__d">hyperlink button</a>
+        <a href="/" class="text-anchor">text anchor</a>
+        <form>
+            <div class="text-field__a">
+                <label for="">label 1</label>
+                <input type="text" name="" id="" class="" />
+            </div>
+            <div class="text-field__b">
+                <label for="">label 2</label>
+                <input type="text" name="" id="" class="" />
+            </div>
+            <div class="text-field__c">
+                <label for="">label 3</label>
+                <input type="text" name="" id="" class="" />
+            </div>
+            <div class="text-field__d">
+                <label for="">label 4</label>
+                <input type="text" name="" id="" class="" />
+            </div>
+            <div class="text-field__e">
+                <label for="">label 5</label>
+                <input type="text" name="" id="" class="" />
+            </div>
+            <div class="text-field__f">
+                <label for=""></label>
+                <input type="text">
+            </div>
+            <div class="text-field__g">
+                <label for=""></label>
+                <input type="text">
+            </div>
+            <div class="text-field__h">
+                <label for=""></label>
+                <input type="text">
+            </div>
+            <div class="check-box__a">
+                <input type="checkbox" name="" id="" />
+                <label for=""></label>
+            </div>
+            <div class="check-box__b">
+                <input type="checkbox" name="" id="" />
+                <label for=""></label>
+            </div>
+            <div class="check-box__c">
+                <input type="checkbox" name="" id="" />
+                <label for=""></label>
+            </div>
+            <div class="radio-button__a">
+                <input type="radio" name="" id="" />
+                <label for=""></label>
+            </div>
+            <div class="radio-button__b">
+                <input type="radio" name="" id="" />
+                <label for=""></label>
+            </div>
+            <div class="file-upload__a">
+                <input type="file" name="" id="" />
+                <label for=""></label>
+            </div>
+            <div class="file-upload__b">
+                <input type="file" name="" id="" />
+                <label for=""></label>
+            </div>
+            <div class="select-box__a">
+                <label for=""></label>
+                <select name="" id="" class="">
+                    <option value="">lorem</option>
+                </select>
+            </div>
+            <div class="select-box__b">
+                <label for=""></label>
+                <select name="" id="" class="">
+                    <option value="">Lorem, ipsum dolor.</option>
+                </select>
+            </div>
+            <input type="button" />
+            <input type="color" />
+            <input type="checkbox" />
+            <input type="date" />
+            <input type="datetime" />
+            <input type="datetime-local" />
+            <input type="email" />
+            <input type="file" />
+            <input type="hidden" />
+            <input type="image" />
+            <input type="month" />
+            <input type="number" />
+            <input type="password" />
+            <input type="radio" />
+            <input type="range" />
+            <input type="reset" />
+            <input type="search" />
+            <input type="submit" />
+            <input type="tel" />
+            <input type="text" />
+            <input type="time" />
+            <input type="url" />
+            <input type="week" />
+        </form>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta beatae autem, laudantium laborum
+            nostrum adipisci esse, explicabo eaque at perspiciatis, aliquid porro expedita dignissimos? Exercitationem
+            ab alias reiciendis quisquam dolore facilis cupiditate voluptas, vero, harum ex cumque minima obcaecati quod
+            laborum id hic molestias at consequatur suscipit enim accusantium aperiam, quae labore? Rem delectus
+            perspiciatis quidem consequuntur numquam, explicabo voluptatum, suscipit necessitatibus nam a quia? Repellat
+            tenetur, hic quod illo quo iure rem dolorum harum veritatis? Laborum vel velit non ab sunt aliquid at itaque
+            omnis, quo, cupiditate voluptate quasi id eveniet odio quos aspernatur. Sequi reiciendis ipsum quis tempora
+            libero laborum optio ipsam sit, eos, ipsa soluta aliquam accusamus? Vel harum eveniet cumque voluptatibus
+            corrupti earum iste debitis ad. Non, commodi itaque illum veritatis eaque, voluptates quidem ut molestias
+            laborum repudiandae voluptatibus rem ad deserunt! Et at, necessitatibus, neque quisquam facere laborum, eos
+            blanditiis amet cupiditate pariatur aspernatur doloribus nemo? Totam laudantium expedita doloribus
+            similique, quas quaerat dolorem eum modi animi reprehenderit facere tempora nemo recusandae reiciendis
+            voluptas praesentium dolor nam possimus quo cumque atque soluta. Fugiat quas labore animi quam unde, nobis
+            dignissimos. Sit accusantium quaerat nostrum rem minus! Necessitatibus, qui harum officiis doloremque
+            possimus quae velit!</p>
+        <hr class="" />
+        <hr class="horizontal-line__1" />
+        <hr class="horizontal-line__2" />
+        <hr class="horizontal-line__3" />
+        <hr class="double-line" />
+        <!-- <hr class="-line" /> -->
+        <hr class="gradation-line" />
+        <hr class="perforated-line" />
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@1.0.0/src/javascripts/common.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nsadfhs/tedex@original/src/javascripts/foundation.js"></script> -->
+    <!-- <script
+        src="https://cdn.jsdelivr.net/gh/nufyn/haedo-modules@javascripts-바까바까/src/javascripts/layouts/foundation_a.js"></script> -->
+    <script></script>
+</body>
+
+</html>
+
+<!-- 
+    슬라이드 와 carousel의 차이
+    /*
+    A slider and carousel are NOT the same thing. A slider slides the images horizontally or vertically (usually
+    horizontally) usually with a momentum effect.
+    
+    A carousel rotates the images radially and in a 3D feel by using distance and depth of field. They rotate on an axis
+    where the image is always facing you.
+    */
+ -->
