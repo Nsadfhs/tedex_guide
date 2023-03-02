@@ -17,6 +17,14 @@
     <title>Home :: Lorem, ipsum.</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/src/stylesheets/all_in_one.css" /> -->
     <link rel="stylesheet" href="/public/stylesheets/all_in_one.css" />
+    <style>
+        .greeting-section {
+            position: relative;
+            min-height: 30%;
+            display: block;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,31 +33,39 @@
             <img src="https://cdn.jsdelivr.net/gh/Nsadfhs/tedex@1.0.0/public/images/logo/sample_logo.png"
                 class="header-logo" alt="" />
         </a>
-        <section class="gnb-wrapper">
+        <nav class="gnb-wrapper">
             <a href="/common">common reset</a>
             <a href="/common/normalized">normalized</a>
             <a href="/common/atomic">아토믹 style</a>
             <a href="/common/all-in-one">올 인 원</a>
-        </section>
+        </nav>
     </header>
-    <aside>1</aside>
-    <main>
-        <aside>1</aside>
-        <section class="title-container border-bottom__1">
-            <h1>TEDEX에 오신걸 환영합니다.</h1>
+    <aside></aside>
+    <main class="main-wrapper">
+        <aside class="greeting-section">
+            <h1 class="section-title__sub">업데이트 순서</h1>
+            <nav>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </nav>
+        </aside>
+        <section class="container-main">
+            <section class="title-container border-bottom__1">
+                <h1 class="section-title__main">TEDEX에 오신걸 환영합니다.</h1>
+            </section>
+
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
         </section>
-        <div class="card__b">
-            <a href="/components/button">콤포넌트</a>
-        </div>
-        <div class="card__b">
-            <a href="/typography" class="">typography</a>
-        </div>
-        <div class="card__b">
-            <a href="/containers">컨테이너</a>
-        </div>
-        <div class="card__b">
-            <a href="/layouts">레이아웃</a>
-        </div>
     </main>
     <footer>
         <p>Copyright 2023. Lorem All rights reserved.</p>
